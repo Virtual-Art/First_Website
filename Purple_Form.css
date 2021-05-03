@@ -1,0 +1,243 @@
+/* -----Entire Body -- */
+body{
+    margin: 0;
+    background-color: rgb(87, 71, 179);
+}
+
+.entire_page
+{
+    font-family: Nunito, sans-serif;
+    background-color: white;
+    border-radius: 30px;
+    margin: 15%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    height: 37em;
+    display: flex;
+    justify-content: center;
+}   
+
+
+/* -----Entire Form -- */
+.form
+{
+   /* background-color: white; */
+    /*width: 300px; */
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+/* -----Let's Talk -- */
+h1{
+    font-size: 48px;
+    font-family: Nunito, sans-serif;
+    color: rgb(95, 48, 95);
+    margin:0;
+}
+
+/* -----Form Description -- */
+#form_directions
+{
+    color: rgb(52, 49, 54);
+}
+
+/* ---LABEL--Name, Email, Message -- */
+.form_labels
+{
+    color: rgb(52, 49, 54);
+}
+
+/* ---INPUT--Name, Email, Message -- */
+.form_input
+{
+    background-color: rgba(189, 169, 189, 0.329);
+    border-radius: 20px;
+    border-style: none;
+    /*width: 290px;*/
+    width:100%;
+    height: 30px;
+    margin: 5px;
+    margin-left: 0;
+}
+
+#name
+{
+    margin: 10px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+#email
+{
+    margin: 10px;
+    margin-left: 2px;
+}
+
+#message
+{
+    margin: 10px;
+    margin-left: 2px;
+}
+
+
+/* --- Specifics -- */
+#form_input_name
+{
+
+}
+
+.form_input::content
+{
+    position: absolute;
+    left: 12px;
+}
+
+#form_input_email
+{
+    
+}
+
+#form_input_message
+{
+    height: 100px;   
+}
+
+/* --- FINISH BUTTON -- */
+#button_send_message
+{
+    color: white;
+    background-color: rgb(118, 82, 226);
+    width: 70%;
+    padding: 10px 30px; 
+    border-radius: 30px;
+    border-style: none;
+    margin: 10px;
+    margin-left: 0;
+    box-shadow: 0px 10px 40px 0px white,
+                0px 20px 75px -5px rgb(22, 3, 129);
+}
+
+
+/* --- FINISH BUTTON -- */
+
+/* ----------- CONTACT INFO ------------ */
+.contact_info
+{
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------- IMAGE ------- */
+#image
+{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+/* -------- INFO ------- */
+.info
+{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- SUB INFO -- */
+.addresses
+{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 60px;
+}
+
+.address
+{
+    margin: 10px;
+}
+
+/* --- SUB INFO -- */
+.social_media
+{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.facebook
+{
+    
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgba(17, 17, 175, 0.747);
+}
+
+.twitter
+{
+        
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgb(27, 143, 189);
+}
+
+.instagram
+{
+        
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgb(146, 93, 146);
+}
+
+/* ---------- CONTACT INFO ---------- */
+
+@media all and (max-width: 1050px) {
+
+    .entire_page
+    {
+          height: 1200px; 
+    }
+    
+}
+
+@media all and (max-width: 650px) {
+
+    .entire_page
+    {
+        height: 1200px;
+       display: flex; 
+       flex-direction: column;
+    }
+    
+    .form
+    {
+        width: 90%;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .contact_info
+    {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
