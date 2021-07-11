@@ -1,0 +1,333 @@
+body {
+    background-color: white;
+}
+
+.about-us-hero {
+    background-color: grey;
+    background-image: url("cheers.JPG");
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    margin: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+
+    #about-us-title {
+        //background-color: lightblue;
+        color: white;
+        font-size: 3.0rem;
+        font-weight: bold;
+
+        flex-basis: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    #about-us-sub-title {
+        //background-color: salmon;
+        flex-basis: 100%;
+        margin: 0px;
+        padding: 10px;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+.about-us-overview {
+    //background-color: grey;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+
+    #about-us-overview-title {
+        //background-color: limegreen;
+        flex-basis: 100%;
+        margin: 0px;
+        padding: 10px 20%;
+        font-size: 1.8rem;
+    }
+
+    #about-us-overview-description {
+        //background-color: salmon;
+        flex-basis: 100%;
+        margin: 0px;
+        padding: 10px 15%;
+        
+    }
+}
+
+
+.about-us-statements {
+    //background-color: grey;
+    padding: 10px 5% 50px 5%;
+    display: flex;
+    text-align: center;    
+
+    .about-us-statement-container {
+        //background-color: salmon;
+        display: flex;
+
+        .about-us-statement {
+            //background-color: limegreen;
+            padding: 10px;
+        }
+    }
+}
+
+
+.about-us-who-we-are {
+    //background-color: grey;
+    padding: 20px 5%;
+    display: flex;
+
+
+    .who-we-are-details {
+        //background-color: limegreen;
+        padding: 40px 0px;
+        padding-right: 5%;
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        #who-we-are-title {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #who-we-are-sub-title {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #who-we-are-description {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    .who-we-are-hero {
+        background-color: mediumaquamarine;
+        width: 50%;
+    }
+
+}
+
+
+
+.about-us-meet-team {
+    //background-color: white;
+    display: flex;
+    padding: 50px 5%;
+
+    .meet-team-details {
+        //background-color: salmon;
+        width: 50%;
+        padding: 30px 5%;
+
+        #meet-team-title {
+            padding: 0px;
+            margin: 0px;    
+        }
+
+        #meet-team-sub-title {
+        }
+
+        #meet-team-description {
+        }
+    }
+
+    .who-we-are-hero {
+        background-color: aquamarine;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+
+        #team-member-image {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #team-member-name {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #team-member-role {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 599px) {
+
+
+    .about-us-hero {
+        height: 300px;
+    }
+
+    .about-us-overview {
+        padding-bottom: 0px;
+      //background-color: grey;
+      //padding: 50px 0px;
+      //display: flex;
+      //flex-wrap: wrap;
+      //text-align: center;
+      //align-content: center;
+  
+      #about-us-overview-title {
+          //background-color: limegreen;
+          //flex-basis: 100%;
+          //margin: 0px;
+          //padding: 10px 20%;
+          //font-size: 1.8rem;
+      }
+  
+      #about-us-overview-description {
+          //background-color: salmon;
+          //flex-basis: 100%;
+          //margin: 0px;
+          padding: 10px 5%;
+          
+      }
+
+    }
+
+    .about-us-statements {
+        //background-color: grey;
+        //padding: 10px 5% 50px 5%;
+        //display: flex;
+        //text-align: center;    
+    
+        .about-us-statement-container {
+            //background-color: salmon;
+            //display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 0px;
+    
+            .about-us-statement {
+                //background-color: limegreen;
+                //padding: 10px;
+                padding: 30px 10%;
+            }
+        }
+    }
+
+
+    .about-us-who-we-are {
+        flex-wrap: wrap;
+
+        .who-we-are-details {
+            //background-color: limegreen;
+          //  padding: 40px 0px;
+          //  padding-right: 5%;
+            width: 100%;
+           // display: flex;
+          //  flex-wrap: wrap;
+           // align-content: center;
+    
+            #who-we-are-title {
+               // flex-basis: 100%;
+               padding: 5px 0px;
+                //padding: 0px;
+              //  margin: 0px;
+            }
+    
+            #who-we-are-sub-title {
+               // flex-basis: 100%;
+               padding: 5px 0px;
+                //padding: 0px;
+               // margin: 0px;
+            }
+    
+            #who-we-are-description {
+               // flex-basis: 100%;
+               padding: 15px 0px;
+                //margin: 0px;
+            }
+        }
+    
+        .who-we-are-hero {
+            width: 100%;
+            height: 200px;
+            //background-color: mediumaquamarine;
+            //width: 50%;
+        }
+    
+    }
+
+    
+
+    .about-us-meet-team {
+        //background-color: white;
+       // display: flex;
+       // padding: 50px 5%;
+       flex-wrap: wrap;
+
+        .meet-team-details {
+            //background-color: salmon;
+            width: 100%;
+           // padding: 30px 5%;
+
+            #meet-team-title {
+                //padding: 0px;
+                //margin: 0px;    
+            }
+
+            #meet-team-sub-title {
+            }
+
+            #meet-team-description {
+            }
+        }
+
+        .who-we-are-hero {
+           // background-color: aquamarine;
+            width: 100%;
+          ////  display: flex;
+           // flex-wrap: wrap;
+          //  align-content: center;
+           // text-align: center;
+
+            #team-member-image {
+              //  flex-basis: 100%;
+               // padding: 0px;
+              //  margin: 0px;
+              height: 100px;
+            }
+
+            #team-member-name {
+               // flex-basis: 100%;
+               padding: 10px 0px;
+               // margin: 0px;
+            }
+
+            #team-member-role {
+              //  flex-basis: 100%;
+               // padding: 0px;
+               padding: 10px 0px;
+               // margin: 0px;
+            }
+        }
+    }
+
+
+}

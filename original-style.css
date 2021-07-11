@@ -1,0 +1,259 @@
+
+
+body{
+    width: 100%;
+    background-color:rgb(17, 31, 22);
+    margin:0px;
+    padding:0px;
+}
+
+.top-of-page {
+    width: 100%;
+    /* background-color:rgb(17, 31, 22); */ 
+     margin:0px;
+     padding:0px;
+}
+
+.top {
+    background-image: url("PhotoRoom-20210613-192702.PNG");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 120%;
+    /*background-repeat: no-repeat; */
+    padding: 20px;
+    z-index: 1;
+}
+
+.top-navigation {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.top-nav-buttons {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 0px 2px 0px rgb(124, 124, 124);
+}
+
+#back-button {
+    background-color: rgb(218, 218, 218) ;
+    background-image: url("turn-left-arrow.png");
+    background-size: 30px;
+    background-position-x: 5px;
+    background-position-y: 4px;
+    background-repeat: no-repeat;
+}
+
+#favourites-button {
+    background-color:rgb(29, 177, 145);
+    background-image: url("add-to-wishlist.png");
+    background-size: 30px;
+    background-position-x: 5px;
+    background-position-y: 7px;
+    background-repeat: no-repeat;
+}
+
+.spacing {
+    height: 350px;
+}
+
+.bottom {
+  background-color: white;
+  /*justify-content: center; */
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px 30px 0px 0px;
+  z-index: 2;
+  margin-top: -30px;
+  padding-bottom: 15px;
+}
+
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#number-heading {
+    width: 40%;
+    color:rgb(29, 177, 145);
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0px;
+}
+
+.number-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.number-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 5px 0px rgb(199, 198, 198);
+    background-color: white;
+    border-color:rgb(17, 31, 22);
+    color:rgb(17, 31, 22);
+}
+
+#second {
+    background-color: rgb(17, 31, 22);
+    border-color:transparent;
+    color:white;
+}
+
+
+.perameter-card-container {
+    display: flex;
+}
+
+.perameter-heading {
+    background-color: rgb(17, 31, 22);
+    width: 100%;
+}
+
+.parameter-card {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgb(17, 31, 22);
+}
+
+.card-heading {
+   padding: 0px;
+   margin: 0px;
+}
+
+.card-description {
+    padding: 0px;
+    margin: 0px;
+    color: grey;
+}
+
+#description {
+    line-height: 30px;
+    color: grey;
+}
+
+/* -----------------------Pay for Section---------------------------------*/
+.product-quantity {
+    position: sticky;
+    display: flex;
+    background-color: rgb(17, 31, 22);
+    margin: 10px;
+    padding: 30px 10px;
+    border-radius:30px;
+    align-items: center;
+    z-index: 3;
+    justify-content: space-evenly;
+}
+
+/* 1/2 quantity selector container */
+.quantity {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    /*padding-right: 20px; */
+
+}
+
+/* 2/2 add to cart button */
+#add-to-cart-button {
+    font-size: 1rem;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(29, 177, 145);
+    color: white;
+    border-radius: 10px;
+    border-style:none;
+    text-align: center;
+}
+
+/* both + & - buttons */
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:rgb(29, 177, 145);
+    color: white;
+   
+}
+
+.product-price {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.main-description {
+    width: 100%;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.sub-description{
+    padding: 20px;
+}
+
+
+#product-details-heading {
+    color: white;
+    padding-left: 20px;
+}
+
+@media only screen and (min-width: 700px){
+    
+    .top-of-page {
+        display: flex;
+        background-color: rgb(17, 31, 22);
+    }
+
+    .top-navigation{
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .top {
+        width: 50%;
+        background-image: cover;
+    }
+
+    .bottom {
+        width: 50%;
+        padding: 30px 20px;
+        padding-bottom: 10px;
+        border-radius: 30px 0px 0px 30px;
+        
+        margin-top: 0px;
+        margin-left: -30px; 
+    }
+
+    .product-quantity {
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .top {
+        background-size: cover;
+    }
+}
