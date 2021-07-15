@@ -4,7 +4,7 @@ body {
 
 .about-us-hero {
     background-color: grey;
-    background-image: url("cheers.JPG");
+    background-image: url("images/cheers.JPG");
     background-size: 100%;
     background-position: center;
     height: 400px;
@@ -81,6 +81,80 @@ body {
     }
 }
 
+.ceo-inside-look {
+    //background: grey;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0px 5%;
+
+    .ceo-headers {
+        //background-color: lightgrey;
+        flex-basis: 100%;
+        display: flex;
+
+        #characteristics-title {
+            flex-basis: 50%;
+        }
+
+        #certifications-title {
+            flex-basis: 50%;
+        }
+    }
+
+    .ceo-characteristics
+    {
+        margin-top: 0px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        //background: lightblue;
+        flex-basis: 50%;
+        list-style-type: none;
+
+        .ceo-trait {
+            flex-basis: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+
+    .ceo-certifications
+    {
+        margin-top: 0px;
+        //background: salmon;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+        //margin: 0px;
+        padding: 0px;
+
+        .certification {
+            //background: yellow;
+            list-style-type: none;
+            padding: 0px;
+            margin: 10px 0px;
+            flex-basis: 100%;
+
+            #certification-title {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #certification-description {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+    }
+
+}
+
 
 .about-us-who-we-are {
     //background-color: grey;
@@ -89,13 +163,14 @@ body {
 
 
     .who-we-are-details {
-        //background-color: limegreen;
         padding: 40px 0px;
         padding-right: 5%;
         width: 45%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-content: center;
+        text-align: center;
 
         #who-we-are-title {
             flex-basis: 100%;
@@ -103,16 +178,21 @@ body {
             margin: 0px;
         }
 
-        #who-we-are-sub-title {
-            flex-basis: 100%;
+        .values {
             padding: 0px;
-            margin: 0px;
-        }
-
-        #who-we-are-description {
-            flex-basis: 100%;
-            padding: 0px;
-            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+          
+            #value {
+                flex-basis: 50%;
+                list-style-type: none;
+                margin: 20px 0px;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -125,10 +205,57 @@ body {
 
 
 
+.who-company-isfor {
+    padding: 5px 10%;
+    
+    .wcif-header {
+        text-align: center; 
+
+        #h-title {
+            padding: 0px 10%;
+            
+        }
+
+        #h-description {
+            padding: 0px 20%;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .customer-traits {
+        padding: 20px 10%;
+
+        .customer-trait {
+            display: flex;
+            padding: 20px 0px;
+            list-style-type: none;
+            font-size: 1.3rem;
+
+            #customer-trait-image {
+                width: 30px;
+                height: 30px;
+                margin: 0px;
+                padding: 0px;
+                padding-right: 20px;
+            }
+
+            #customer-trait-description {
+                margin: 0px;
+                padding: 0px;
+            }
+
+        }
+    }
+}
+
+
+
+
 .about-us-meet-team {
-    //background-color: white;
+    background-color: sandybrown;
     display: flex;
-    padding: 50px 5%;
+    padding: 50px 8% 20px 8%;
 
     .meet-team-details {
         //background-color: salmon;
@@ -175,6 +302,98 @@ body {
     }
 }
 
+
+.finish-line-cta {
+    //background-color: grey;
+    display: flex;
+    
+
+    .shop-cta   {
+        padding: 20px 4%;
+        margin: 20px 1%;
+        border-radius: 10px;
+        background-color: lightblue;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 40%;
+
+        #shop-cta-title {
+            flex-basis: 100%;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        #shop-cta-description {
+            margin: 0px;
+            margin-bottom: 30px;
+            flex-basis: 100%;
+            font-size: 1.2rem;
+            color: rgb(73, 18, 73);
+        }
+
+        #shop-cta-image {
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+        }
+
+        #shop-cta-button   {
+            padding: 10px 60px;
+            background-color: rgb(73, 18, 73);
+            margin: 20px 5%;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    .contact-cta {
+        padding: 20px 4%;
+        margin: 20px 1%;
+        border-radius: 10px;
+        background-color: salmon;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 40%;
+
+        #contact-cta-title {
+            flex-basis: 100%;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        #contact-cta-description {
+            margin: 0px;
+            margin-bottom: 30px;
+            flex-basis: 100%;
+            font-size: 1.1rem;
+            color: rgb(73, 18, 73);
+        }
+
+        #contact-cta-image {
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+        }
+
+        #contact-cta-button   {
+            padding: 10px 60px;
+            background-color: rgb(73, 18, 73);
+            margin: 20px 5%;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
 
 
 @media screen and (max-width: 599px) {
@@ -258,11 +477,7 @@ body {
                // margin: 0px;
             }
     
-            #who-we-are-description {
-               // flex-basis: 100%;
-               padding: 15px 0px;
-                //margin: 0px;
-            }
+      
         }
     
         .who-we-are-hero {

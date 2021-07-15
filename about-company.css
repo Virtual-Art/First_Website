@@ -4,7 +4,7 @@ body {
 
 .about-us-hero {
   background-color: grey;
-  background-image: url("cheers.JPG");
+  background-image: url("images/cheers.JPG");
   background-size: 100%;
   background-position: center;
   height: 400px;
@@ -83,6 +83,95 @@ body {
   padding: 10px;
 }
 
+.ceo-inside-look {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 0px 5%;
+}
+
+.ceo-inside-look .ceo-headers {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ceo-inside-look .ceo-headers #characteristics-title {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.ceo-inside-look .ceo-headers #certifications-title {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.ceo-inside-look .ceo-characteristics {
+  margin-top: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  list-style-type: none;
+}
+
+.ceo-inside-look .ceo-characteristics .ceo-trait {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ceo-inside-look .ceo-certifications {
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 0px;
+}
+
+.ceo-inside-look .ceo-certifications .certification {
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 0px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.ceo-inside-look .ceo-certifications .certification #certification-title {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ceo-inside-look .ceo-certifications .certification #certification-description {
+  margin: 0px;
+  padding: 0px;
+}
+
 .about-us-who-we-are {
   padding: 20px 5%;
   display: -webkit-box;
@@ -99,8 +188,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  text-align: center;
 }
 
 .about-us-who-we-are .who-we-are-details #who-we-are-title {
@@ -110,18 +203,29 @@ body {
   margin: 0px;
 }
 
-.about-us-who-we-are .who-we-are-details #who-we-are-sub-title {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.about-us-who-we-are .who-we-are-details .values {
   padding: 0px;
-  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.about-us-who-we-are .who-we-are-details #who-we-are-description {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  padding: 0px;
-  margin: 0px;
+.about-us-who-we-are .who-we-are-details .values #value {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  list-style-type: none;
+  margin: 20px 0px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .about-us-who-we-are .who-we-are-hero {
@@ -129,11 +233,55 @@ body {
   width: 50%;
 }
 
-.about-us-meet-team {
+.who-company-isfor {
+  padding: 5px 10%;
+}
+
+.who-company-isfor .wcif-header {
+  text-align: center;
+}
+
+.who-company-isfor .wcif-header #h-title {
+  padding: 0px 10%;
+}
+
+.who-company-isfor .wcif-header #h-description {
+  padding: 0px 20%;
+  font-size: 1.5rem;
+}
+
+.who-company-isfor .customer-traits {
+  padding: 20px 10%;
+}
+
+.who-company-isfor .customer-traits .customer-trait {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 5%;
+  padding: 20px 0px;
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+
+.who-company-isfor .customer-traits .customer-trait #customer-trait-image {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 20px;
+}
+
+.who-company-isfor .customer-traits .customer-trait #customer-trait-description {
+  margin: 0px;
+  padding: 0px;
+}
+
+.about-us-meet-team {
+  background-color: sandybrown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 8% 20px 8%;
 }
 
 .about-us-meet-team .meet-team-details {
@@ -180,6 +328,114 @@ body {
   margin: 0px;
 }
 
+.finish-line-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.finish-line-cta .shop-cta {
+  padding: 20px 4%;
+  margin: 20px 1%;
+  border-radius: 10px;
+  background-color: lightblue;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 40%;
+}
+
+.finish-line-cta .shop-cta #shop-cta-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.finish-line-cta .shop-cta #shop-cta-description {
+  margin: 0px;
+  margin-bottom: 30px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.2rem;
+  color: #491249;
+}
+
+.finish-line-cta .shop-cta #shop-cta-image {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+}
+
+.finish-line-cta .shop-cta #shop-cta-button {
+  padding: 10px 60px;
+  background-color: #491249;
+  margin: 20px 5%;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.finish-line-cta .contact-cta {
+  padding: 20px 4%;
+  margin: 20px 1%;
+  border-radius: 10px;
+  background-color: salmon;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 40%;
+}
+
+.finish-line-cta .contact-cta #contact-cta-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.finish-line-cta .contact-cta #contact-cta-description {
+  margin: 0px;
+  margin-bottom: 30px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.1rem;
+  color: #491249;
+}
+
+.finish-line-cta .contact-cta #contact-cta-image {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+}
+
+.finish-line-cta .contact-cta #contact-cta-button {
+  padding: 10px 60px;
+  background-color: #491249;
+  margin: 20px 5%;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 599px) {
   .about-us-hero {
     height: 300px;
@@ -210,9 +466,6 @@ body {
   }
   .about-us-who-we-are .who-we-are-details #who-we-are-sub-title {
     padding: 5px 0px;
-  }
-  .about-us-who-we-are .who-we-are-details #who-we-are-description {
-    padding: 15px 0px;
   }
   .about-us-who-we-are .who-we-are-hero {
     width: 100%;
